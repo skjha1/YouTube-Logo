@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <style>
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo{
+            width: 150px;
+            height: 120px;
+            background-color: red;
+            margin: 10px 20px 0 0;
+            border-radius: 60%/9%;
+            position: relative;
+        }
+        .logo::before{
+            content: "";
+            position: absolute;
+            top: 7%;
+            bottom: 7%;
+            left: -9.5%;
+            right: -9.5%;
+            background-color: red;
+            border-radius: 9%/50%;
+        }
+        .logo::after
+        {
+            content: "";
+            position: absolute;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-left: 34px solid #fff;
+            left: 50px;
+            top: 35px;
+
+        }
+        .text{
+            font-size: 120px;
+            font-family: "Oswald","sans-serif";
+            font-weight: bold;
+            letter-spacing: -2px;
+            color: #212121;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <span class="logo"></span>
+        <span class="text">YouTube</span>
+    </div>
+</body>
+</html>
